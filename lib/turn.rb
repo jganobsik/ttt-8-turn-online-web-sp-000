@@ -14,7 +14,7 @@ def input_to_index(input)
 end
 
 
-def move(board, index, player = "X")
+def move (board, index, player = "X")
   board[index] = player
   
 end
@@ -51,8 +51,9 @@ input = gets.strip
 
 index  = input_to_index(input)
 
-move(board, index)
 
-puts display_board(board)
 
+if valid_move(board, index)
+  move(board, index)
+end
 end
