@@ -54,3 +54,5 @@ index  = input_to_index(input)
 move(board, index)
 
 puts display_board(board)
+
+end
